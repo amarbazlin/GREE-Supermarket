@@ -1,0 +1,389 @@
+h1 {
+    background-color: #f6ae50; 
+    color: rgb(238, 14, 14); 
+    padding: 2px; 
+    text-align: center; 
+    text-decoration: none;
+
+}
+h1 :hover{
+    cursor: pointer;
+    color: hsl(24, 100%, 50%);
+    text-decoration: none; 
+}
+
+
+a{
+    text-decoration: none;
+    color: rgb(3, 0, 0);
+}
+.header-container {
+    background-color:#f6ae50 ;
+    color: white;  
+    text-align: right;
+    
+}
+.icons{
+    display:grid;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    border: 1px solid #565656; 
+    margin-bottom: -2%;
+    padding: 10px;
+    font-size: 15px;
+
+}
+.icons a{
+    
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    text-align: center; 
+    text-decoration: none;
+    margin: 0 5px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.icons a:hover{
+    transform: translateY(-3px);
+
+}
+.icons .twitter a{
+    color: rgb(94, 156, 244);
+}
+.icons .facebook a{
+    color: rgb(7, 7, 139);
+}
+.icons .youtube a{
+    color: #e91010;
+}
+.icons .insta a{
+    color: rgb(215, 106, 125);
+}
+.copyright-icons{
+    color: #ffffff;
+}
+.payment{
+    display: flex;
+}
+.usfulls{
+    display: flex;
+}
+.follows{
+    display: grid;
+}
+
+
+
+
+
+input[type="search"]{
+    width: 300px; 
+    padding: 8px; 
+    border: 1px solid hsl(0, 97%, 47%); 
+    border-radius: 4px; 
+    outline: none; 
+    transition: border-color 0.3s ease;
+} 
+
+
+input[type="search"]:focus {
+    border-color: hsl(211, 68%, 80%); 
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    background-color: #f6ae50; 
+}
+
+nav ul li {
+    display: inline;
+    margin: 0px 50px;
+    font-size: 18px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: hsl(0, 0%, 0%);
+    font-weight: bold;
+}
+nav ul li a:hover {
+    color: hsl(24, 100%, 50%); 
+
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+}
+
+
+.background-image {
+    width: 100%;
+    height: auto;
+    object-fit: fill;
+}
+
+
+.search-bar {
+    position: absolute;
+    top: 360px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1; 
+    text-align: center;
+}
+
+
+.search-bar input[type="text"] {
+    padding: 15px 150px;
+    border: 1px solid hsl(39, 100%, 50%);
+    border-radius: 10px;
+    margin-right: 2px;
+}
+
+
+.search-bar button {
+    padding: 15px 20px;
+    border: hsl(0, 0%, 100%);
+ 
+    background-color: hsl(22, 100%, 50%); 
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+.search-bar button:hover {
+    background-color: hsl(29, 94%, 58%); 
+}
+
+#heading{
+    margin-top: -2px;
+    
+    font: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    font-variant: small-caps;
+    font-size: 50px;
+}
+
+
+.intro{
+    background-color: #ffe9c7;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    border-radius: 10px;
+    margin: 1%;
+    float: left;
+    width: 69%;
+    margin-top: 3%;
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+
+}
+.offers{
+    background-color: #ffe9c7;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    border-radius: 10px;
+    margin: 1%;
+    float: right;
+    width: 24%;
+    padding-bottom: 10px;
+    margin-top: 3%;
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+
+.category-container {
+    text-align: center; 
+    inline-size: 20%;
+    block-size: 20%;
+
+}
+
+.category {
+    display: inline-block; 
+    border: 1px solid hsl(0, 0%, 0%);
+    border-radius: 60px;
+    padding: 20px;
+    margin-top: 0;
+    margin-bottom: 40px;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.category img {
+    width: 290px; 
+    height: 200px;
+    margin-bottom: 5px;
+}
+.category :hover{
+    border: 1px solid  #ffffff;
+}
+.category a:hover{
+    border: solid #ffffff;
+
+}
+
+
+
+.category p {
+    margin-bottom: 20px;
+}
+
+
+@media (max-width:1460px) {
+    section{
+        .products{
+            padding: 0 12%;
+            transition: .2s;
+
+        }
+       
+    }
+
+}
+@media(max-width: 1000px){
+    img-text-block img{
+        width: 100%;
+        height: auto;
+
+    }
+    .header-container h1{
+        font-size: 7px;
+        margin: 0px 0px 30px;
+        
+    }
+    main {
+        margin: 0 0 30px;
+    }
+    
+    .search-bar{
+        position: relative;
+
+    }
+    .search-bar input[type="text"]{
+        padding:12px 100px;
+    }
+    .search-bar button{
+        padding: 12px 18px;
+    }
+}
+
+@media (max-width:1350px){
+    
+    .navlist{
+        position: sticky;
+        top: 100%;
+        right: 100%;
+        width: 100%;
+        height: 40px;
+        background: #f6ae50 ;
+        display: flex;
+        align-items: center;
+        flex-direction:column;
+        padding: 30px 10px;
+        transition: all .55s ease;
+    }
+    .navlist a{
+        margin-left: 0;
+        display: block;
+        margin:  10px 0;
+    }
+    .navlist.open{
+        right: 0;
+    }
+}
+    .linkers{
+        display: flex;
+    }
+    .bottom{
+        
+        background-color: #565656;
+        font-size: 20px;
+        border-radius: 10px;
+        margin: 1%;
+        padding-top: 0%;
+        padding-bottom: 10px;
+    
+        margin-top: 45%;
+        text-align: justify;
+        padding-left: 10px;
+        padding-right: 10px;
+        
+    }
+    .bottom h4{
+        color: #ffffff;
+    }
+    
+
+.foot{
+    color: #ffffff;
+    font-size: 15px;
+    
+}
+.foot a:hover{
+    color: hsl(24, 100%, 50%);
+}
+  
+.apps {
+    display: grid;
+    
+}
+.applications{
+    display: grid;
+    margin-right: 100px;
+}
+.play{
+    margin-top: 20px;
+    color: rgb(51, 104, 126);
+    margin-bottom: 20px;
+    font-size: 28px;
+    margin-right: 20px;
+
+}
+.app{
+    color: rgb(0, 119, 255);
+    font-size: 28px;
+    margin-right: 20px;
+}
+.follows{
+    color: white;
+}
+.payment{
+    color:white;
+}
+.application{
+    color: #ffffff;
+}
+.visa{
+    font-size: 28px;
+    margin-left: 35px;
+    margin-bottom: 35px;
+}
+.master{
+    font-size: 28px;
+    margin-left: 35px;
+}
+

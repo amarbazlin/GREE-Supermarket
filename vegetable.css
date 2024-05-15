@@ -1,0 +1,355 @@
+h1 {
+    background-color: #f6ae50; 
+    color: rgb(238, 14, 14); 
+    padding: 2px; 
+    text-align: center; 
+    text-decoration: none;
+    
+
+}
+h1 :hover{
+    cursor: pointer;
+    color: hsl(24, 100%, 50%);
+    text-decoration: none; 
+}
+
+.header-container {
+    background-color:#f6ae50 ;
+    color: white;  
+    text-align: right;
+    
+}
+a{
+    text-decoration: none;
+    color: rgb(3, 0, 0);
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    background-color: #f6ae50; 
+}
+
+nav ul li {
+    display: inline;
+    margin: 0px 50px;
+    font-size: 18px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: hsl(0, 0%, 0%);
+    font-weight: bold;
+}
+nav ul li a:hover {
+    color: hsl(24, 100%, 50%); 
+
+}
+#heading{
+    margin-top: -2px;
+    
+    font: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    font-variant: small-caps;
+    font-size: 50px;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+}
+.icons{
+    display: flex;
+
+}
+.icons a{
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    text-align: center; 
+    text-decoration: none;
+    margin: 0 5px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.icons a:hover{
+    transform: translateY(-3px);
+
+}
+.icons .twitter a{
+    color: rgb(94, 156, 244);
+}
+.icons .facebook a{
+    color: rgb(7, 7, 139);
+}
+.icons .youtube a{
+    color: #e91010;
+}
+.icons .insta a{
+    color: rgb(215, 106, 125);
+}
+
+.linkers{
+    display: flex;
+}
+.bottom{
+    
+    background-color: #565656;
+    font-size: 20px;
+    border-radius: 10px;
+    margin: 1%;
+    padding-top: 0%;
+    padding-bottom: 10px;
+
+    margin-top: 3%;
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+.vegehead{
+font-size: 25px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+margin-left: 27%;
+text-align: center;
+margin-right: 27%;
+margin-top: 4%;
+margin-bottom: -1%;
+color: #4c4c4c;
+background-color: #21860d81;
+border-radius: 10px;
+
+}
+.bottom h4{
+    color: #ffffff;
+}
+
+
+.foot{
+color: #ffffff;
+font-size: 15px;
+
+}
+.foot a:hover{
+color: hsl(24, 100%, 50%);
+}
+
+.apps {
+display: grid;
+
+}
+.applications{
+display: grid;
+margin-right: 100px;
+}
+.play{
+margin-top: 20px;
+color: rgb(51, 104, 126);
+margin-bottom: 20px;
+font-size: 28px;
+margin-right: 20px;
+
+}
+.app{
+color: rgb(0, 119, 255);
+font-size: 28px;
+margin-right: 20px;
+}
+.follows{
+color: white;
+}
+.payment{
+color:white;
+}
+.application{
+color: #ffffff;
+}
+.visa{
+font-size: 28px;
+margin-left: 35px;
+margin-bottom: 35px;
+}
+.master{
+font-size: 28px;
+margin-left: 35px;
+}
+
+.icons{
+    display:grid;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    border: 1px solid #565656; 
+    margin-bottom: -2%;
+    padding: 10px;
+    font-size: 15px;
+
+}
+.icons a{
+    
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    text-align: center; 
+    text-decoration: none;
+    margin: 0 5px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.icons a:hover{
+    transform: translateY(-3px);
+
+}
+.icons .twitter a{
+    color: rgb(94, 156, 244);
+}
+.icons .facebook a{
+    color: rgb(7, 7, 139);
+}
+.icons .youtube a{
+    color: #e91010;
+}
+.icons .insta a{
+    color: rgb(215, 106, 125);
+}
+.copyright-icons{
+    color: #ffffff;
+}
+.payment{
+    display: flex;
+}
+.usfulls{
+    display: flex;
+}
+.follows{
+    display: grid;
+}
+
+.product-container {
+    text-align: center; 
+    
+}
+.item-box{
+    display:grid;
+    flex-wrap: wrap;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 10px;
+    margin-top: 5%;
+    margin-left: 10px;
+    margin-right: 4%;
+}
+.product {
+    display:grid; 
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 2px;
+    width: 300px;
+    height: auto;
+    margin: 15px 20px; 
+    text-align: center;
+    cursor: pointer;
+    
+    
+}
+
+.product img {
+
+    margin-bottom: 2px;
+    width: 200px;
+    height: auto;
+   
+    
+    
+}
+.product :hover{
+    border: 1px solid  #ffffff;
+    
+}
+
+
+.product h3 {
+    margin-bottom: 1px;
+    margin-top: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.product p {
+    margin-bottom: 5px;
+}
+
+.product button {
+    background-color: #007bff;
+    width: 100px;
+    color: white;
+    padding: 10px 1px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.main-image{
+  
+    margin-top: 4%;
+    
+}
+.text{
+    position: absolute;
+    top:49%;
+    text-align: center;
+    color: hsl(201, 67%, 94%);
+ 
+    left: 10%;
+    right: 10%;
+    border-radius: 30px;
+    font-stretch: ultra-expanded;
+    font-size: 80px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
+    background-color: #063c12c1;
+    padding: 10px; 
+}
+.veg{
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 27%;
+    text-align: center;
+    margin-right: 27%;
+    padding-bottom: -15%;
+    margin-top: 40px;
+    margin-bottom: -1%;
+    color: #f4ededc3;
+    background-color: #3a3434a2;
+    border-radius: 10px;
+  
+ 
+}
+.venues{
+    background-color:#21860d81 ;
+    color: rgb(8, 36, 4);
+    margin-right: 2%;
+    margin-left: 2%;
+    border-radius:20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 4%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.venues ul{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+
+.venues p{
+    font-size: 22px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 20px;
+    margin-top: 20px;
+}

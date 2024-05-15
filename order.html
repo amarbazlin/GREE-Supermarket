@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gree</title>
+    <link rel="stylesheet" href="style/order.css">
+</head>
+
+<body>
+<header>
+    <div class="header-container">
+        <h1 id="heading"><a href="index.html">Gree Supermarket</a></h1>
+    </div>
+    <nav>
+        <ul class="navlist">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dairy.html" >Dairy Products</a></li>
+            <li><a href="cosmetics.html" >Cosmetics</a></li>
+            <li><a href="vegetables.html" >Vegetables</a></li>
+            <li><a href="Beverages.html" >Beverages</a></li>
+            <li><a href="order.html" >Order</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="loyalty.html" >Loyalty</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="container">
+        <h1>Order Your Products here</h1>
+        
+        <form action="submit_registration.php" method="post">
+          <center><h2>Your Information</h2></center>
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required> 
+          </div>
+          <div class="form-group">
+            <label for="phone">Loyalty Card Number (Optional):</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+          <center><h2>Shipping Details</h2></center>
+          <div class="form-group">
+            <label for="phone">Shipping Address:</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+        
+          <div class="form-group">
+            <label for="">Shipping Options:</label>
+            <select name="shipping" id="shipping">
+                <option value="">Choose (Optional)</option>
+              <option value="">Normal Shipping (Ships in 7 days)</option>
+              <option value="">Fast Shipping (Ships within 4-5 days)</option>
+              <option value="">Express Shipping (Ships within 1-3 days)</option>
+            
+            </select>
+            <h2><center>Payment method </center></h2>
+            <div class="form-group">
+                <label for="">Select the Payement Method:</label>
+                <select name="payment" id="payment" required>
+                  <option value="">Choose a method</option>
+                  <option value="">Credit Card</option>
+                  <option value="">Debit Card</option>
+                  <option value="">Cash On Delivery </option>
+                
+                </select>
+
+          </div>
+          <button type="submit">Register Now</button>
+        </form>
+      </div>
+
+</main>
+<footer>
+    <section class="bottom">
+        <section class="linkers">
+            
+            
+            <div class="foot">
+                <center><h3>Useful Links</h3></center>
+                <a href="about.html">About Us</a><br><br>
+                <a href="">Terms & Conditions</a><br><br>
+                <a href="">Return Policy</a><br><br>
+                <a href="">Privacy Policy </a><br><br>
+                <a href="">Contact Us</a>
+            </div><hr>
+        
+            <div class="follows">
+                
+                    <div class="icons">
+                        <h3>Follow Us</h3>
+                        <div class="twitter"><a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a></div>
+                        <div class="facebook"><a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a></div>
+                        <div class="youtube"><a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a></div>
+                        <div class="insta"><a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a></div>
+                    </div>
+            </div>
+                <hr>
+            <div class="payment">
+                
+                <div>
+                    <center><h5>Payement Methods</h5><br></center>
+                    <div class="visa"><i class="fa-brands fa-cc-visa"></i></div>
+                    <div class="master"><i class="fa-brands fa-cc-mastercard"></i></div>
+                </div>
+            </div>
+            <hr>
+            <div class="application">
+                <h5>Download App</h5>
+                <center><div class="apps">
+                    <div class="play"><i class="fa-brands fa-google-play"></i></div>
+                    <div class="app"><i class="fa-brands fa-app-store-ios"></i></div>
+                </div></center>
+            </div>
+        </section>
+        
+        
+        <div class="copyright-icons">
+            <center><span>&copy; 2024 Gree.All Rights Reserved.</span></center>
+    
+        </div>
+    </section>
+</footer>
+</body>
+</html>

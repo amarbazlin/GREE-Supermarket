@@ -1,0 +1,333 @@
+
+h1 {
+    background-color: #f6ae50; 
+    color: rgb(238, 14, 14); 
+    padding: 2px; 
+    text-align: center; 
+    text-decoration: none;
+    
+
+}
+h1 :hover{
+    cursor: pointer;
+    color: hsl(24, 100%, 50%);
+    text-decoration: none; 
+}
+
+.header-container {
+    background-color:hsl(207, 94%, 64%) ;
+    color: white;  
+    text-align: right;
+    
+}
+a{
+    text-decoration: none;
+    color: rgb(3, 0, 0);
+}
+#heading{
+    margin-top: -2px;
+    
+    font: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    font-variant: small-caps;
+    font-size: 50px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+  }
+  label {
+    display: block;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 360px;
+    border: none;
+    margin-top: 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    
+  }
+  
+  button:hover {
+    background-color: #3e8e41;
+  }
+
+
+
+
+
+
+  
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+  .container {
+    margin-top:10%;
+    
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid #d3d2d2;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+  }
+  .container h1{
+    background-color: #0056b3;
+    color: #f6ae50;
+    border-radius: 20px;
+  }
+  .container h2{
+    color: #0056b3;
+    margin-top: 30px;
+  }
+
+  
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+
+.product-container {
+    text-align: center; 
+    
+}
+
+.product {
+    display: grid; 
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 0 10px; 
+    text-align: center;
+    cursor: pointer;
+}
+
+.product img {
+    width: 290px; 
+    height: auto;
+    margin-bottom: 5px;
+}
+.product :hover{
+    border: 1px solid  #8f8f8f;
+}
+
+.product h2 {
+    margin-bottom: 10px;
+}
+
+.product p {
+    margin-bottom: 20px;
+}
+
+.product button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.product button:hover {
+    background-color: #0056b3;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    background-color: #f6ae50; 
+}
+
+nav ul li {
+    display: inline;
+    margin: 0px 50px;
+    font-size: 18px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: hsl(0, 0%, 0%);
+    font-weight: bold;
+}
+nav ul li a:hover {
+    color: hsl(24, 100%, 50%); 
+
+}
+.linkers{
+    display: flex;
+}
+.bottom{
+    
+    background-color: #565656;
+    font-size: 20px;
+    border-radius: 10px;
+    margin: 1%;
+    padding-top: 0%;
+    padding-bottom: 10px;
+
+    margin-top:3%;
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+.bottom h4{
+    color: #ffffff;
+}
+
+
+.foot{
+color: #ffffff;
+font-size: 15px;
+
+}
+.foot a:hover{
+color: hsl(24, 100%, 50%);
+}
+
+.apps {
+display: grid;
+
+}
+.applications{
+display: grid;
+margin-right: 100px;
+}
+.play{
+margin-top: 20px;
+color: rgb(51, 104, 126);
+margin-bottom: 20px;
+font-size: 28px;
+margin-right: 20px;
+
+}
+.app{
+color: rgb(0, 119, 255);
+font-size: 28px;
+margin-right: 20px;
+}
+.follows{
+color: white;
+}
+.payment{
+color:white;
+}
+.application{
+color: #ffffff;
+}
+.visa{
+font-size: 28px;
+margin-left: 35px;
+margin-bottom: 35px;
+}
+.master{
+font-size: 28px;
+margin-left: 35px;
+}
+.icons{
+    display:grid;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    border: 1px solid #565656; 
+    margin-bottom: -2%;
+    padding: 10px;
+    font-size: 15px;
+
+}
+.icons a{
+    
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    text-align: center; 
+    text-decoration: none;
+    margin: 0 5px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.icons a:hover{
+    transform: translateY(-3px);
+
+}
+.icons .twitter a{
+    color: rgb(94, 156, 244);
+}
+.icons .facebook a{
+    color: rgb(7, 7, 139);
+}
+.icons .youtube a{
+    color: #e91010;
+}
+.icons .insta a{
+    color: rgb(215, 106, 125);
+}
+.copyright-icons{
+    color: #ffffff;
+}
+.payment{
+    display: flex;
+}
+.usfulls{
+    display: flex;
+}
+.follows{
+    display: grid;
+}
+
+@media (max-width:1350px){
+    
+    .navlist{
+        position: static;
+        top: 100%;
+        background-color: #0056b3;
+        right: 100%;
+        width: 100%;
+        height: 40px;
+        background:white ;
+        display: flex;
+        margin-bottom: 50%;
+        align-items: center;
+        flex-direction:column;
+        padding: 30px 10px;
+        transition: all .55s ease;
+    }
+    .navlist a{
+        margin-left: 0;
+        display: block;
+        margin:  10px 0;
+    }
+    .navlist.open{
+        right: 0;
+    }
+    .button{
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 50px;
+    border: none;
+    margin-top: 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    
+    }
+}
