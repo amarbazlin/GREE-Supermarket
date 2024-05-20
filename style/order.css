@@ -5,6 +5,7 @@ h1 {
     padding: 2px; 
     text-align: center; 
     text-decoration: none;
+  
     
 
 }
@@ -15,9 +16,10 @@ h1 :hover{
 }
 
 .header-container {
-    background-color:hsl(207, 94%, 64%) ;
+   
     color: white;  
     text-align: right;
+    width: 100%;
     
 }
 a{
@@ -51,7 +53,7 @@ a{
   button {
     background-color: #4CAF50;
     color: white;
-    padding: 10px 360px;
+    padding: 10px 20px;
     border: none;
     margin-top: 20px;
     border-radius: 3px;
@@ -59,10 +61,29 @@ a{
     
   }
   
-  button:hover {
+.button:hover {
     background-color: #3e8e41;
   }
 
+  
+  .follows{
+    color: white;
+    }
+    .payment{
+    color:white;
+    }
+    .application{
+    color: #ffffff;
+    }
+    .visa{
+    font-size: 28px;
+    margin-left: 35px;
+    margin-bottom: 35px;
+    }
+    .master{
+    font-size: 28px;
+    margin-left: 35px;
+    }
 
 
 
@@ -152,7 +173,9 @@ nav ul {
     padding: 0;
     background-color: #f6ae50; 
 }
-
+.navlist{
+    width: 100%;
+}
 nav ul li {
     display: inline;
     margin: 0px 50px;
@@ -180,6 +203,7 @@ nav ul li a:hover {
     margin: 1%;
     padding-top: 0%;
     padding-bottom: 10px;
+    width: 100%;
 
     margin-top:3%;
     text-align: justify;
@@ -295,23 +319,34 @@ margin-left: 35px;
     display: grid;
 }
 
-@media (max-width:1350px){
     
+@media (max-width:430px){
+
     .navlist{
-        position: static;
+        position: sticky;
         top: 100%;
-        background-color: #0056b3;
-        right: 100%;
-        width: 100%;
-        height: 40px;
-        background:white ;
-        display: flex;
-        margin-bottom: 50%;
         align-items: center;
+        
+        height: auto;
+        background: #f6ae50 ;
+        display: flex;
+        
+        text-align: center;
         flex-direction:column;
-        padding: 30px 10px;
-        transition: all .55s ease;
+        padding: 0px 10px;
+        
     }
+    .container h1{
+        font-size: 20px
+    }
+    .container h2{
+        font-size: 19px
+    }
+    .h1{
+        font-size: ;
+        color: #e91010;
+    }
+    
     .navlist a{
         margin-left: 0;
         display: block;
@@ -320,14 +355,21 @@ margin-left: 35px;
     .navlist.open{
         right: 0;
     }
-    .button{
-    background-color: #4CAF50;
-    color: white;
-    padding: 20px 50px;
-    border: none;
-    margin-top: 20px;
-    border-radius: 3px;
-    cursor: pointer;
+    
+   
+    .bottom{
+        font-size: 10px;
+        width: 350px;
     
     }
+   
+   .container{
+    margin-top: 1%;
+    width: 310px;
+    margin-left: 6px;
+    margin-right: 10px;
+}
+    
+    
+
 }

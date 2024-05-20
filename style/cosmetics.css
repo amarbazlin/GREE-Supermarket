@@ -17,7 +17,11 @@ h1 :hover{
     background-color:#f6ae50 ;
     color: white;  
     text-align: right;
+    width: 100%;
     
+}
+.navlist{
+    width: 100%;
 }
 a{
     text-decoration: none;
@@ -58,15 +62,7 @@ thead{
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
 }
-@media screen and (max-width:600px){
-    
-    tr,td{
-        display: block;
-    }
-    th{
-        display: none;
-    }
-}
+
 table {
     width:96%;
     
@@ -257,6 +253,7 @@ nav ul li a:hover {
     margin: 1%;
     padding-top: 0%;
     padding-bottom: 10px;
+    width: 100%;
 
     margin-top: 0%;
     text-align: justify;
@@ -331,7 +328,89 @@ margin-left: 35px;
  
     
 }
+@media (max-width:430px){
 
+    .navlist{
+        position: sticky;
+        top: 100%;
+        align-items: center;
+        height: auto;
+        background: #f6ae50 ;
+        display: flex;
+        
+        text-align: center;
+        flex-direction:column;
+        padding: 0px 10px;
+        
+    }
+    .cosmeticshead{
+        font-size: 17px
+    }
+    .h1{
+        font-size: ;
+        color: #e91010;
+    }
+    
+    .navlist a{
+        margin-left: 0;
+        display: block;
+        margin:  10px 0;
+    }
+    .navlist.open{
+        right: 0;
+    }
+   
+    .bottom{
+        font-size: 10px;
+        width: 300px;
+    
+    }
+  
+   
+
+  tr,td{
+    display: grid; 
+    
+}
+th{
+    display: none;
+}
+.table{
+    width: 90%;
+}
+
+.item-box{
+    display: grid;
+    
+}
+table{
+    width: 30px;
+    margin-left: -15%;
+}
+tbody tr td {
+    width: 290px;
+}
+tbody  {
+    width: 300px;
+}
+.text{
+    margin-top: 480px;
+    margin-right: 50px;
+    margin-left: -20%;
+    font-size: 30px;
+}
+.main-image{
+    width: 335px;
+    height: auto;
+}
+.cos{
+    margin-top: 0%;
+}
+.product{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+  }
 
 
 

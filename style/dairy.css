@@ -17,6 +17,7 @@ h1 :hover{
     background-color:#f6ae50 ;
     color: white;  
     text-align: right;
+    width: 100%;
     
 }
 a{
@@ -109,6 +110,7 @@ body, html {
     text-align: justify;
     padding-left: 10px;
     padding-right: 10px;
+    width: 100%;
     
 }
 .bottom h4{
@@ -201,7 +203,7 @@ margin-left: 35px;
 }
 .text{
     position: absolute;
-    top: 18%;
+    top: 30%;
     text-align: center;
     color: hsl(201, 67%, 94%);
  
@@ -258,7 +260,9 @@ margin-left: 35px;
     background-color: #3a3434a2;
     border-radius: 10px;
 }
-
+.imagemain{
+    height: 900px;
+}
 .product-container {
     text-align: center; 
     
@@ -317,3 +321,79 @@ margin-left: 35px;
     border-radius: 10px;
     cursor: pointer;
 }
+.navlist{
+    width: 100%;
+}
+
+@media (max-width:430px){
+
+    .navlist{
+        position: sticky;
+        top: 100%;
+        align-items: center;
+        
+       
+        height: auto;
+        background: #f6ae50 ;
+        display: flex;
+        
+        text-align: center;
+        flex-direction:column;
+        padding: 0px 10px;
+        
+    }
+    .main-image{
+        width: 340px;
+        height: 500px;
+        margin-top: 20px;
+        margin-bottom: -30%;
+    
+    }
+    .intro{
+        margin-top: -40%;
+        font-size: 2px;
+    }
+.intro h2{
+    font-size: 20px;
+}
+    .about{
+        margin-right: 16%;
+        font-size: 10px;
+
+    }
+    .about p{
+        margin-left: 2px;
+    }
+    .dairyhead h2{
+        font-size: 20px;
+        padding-left: 2px;
+    }
+    .imagemain{
+        height: 220px;
+    }
+    .text{
+        font-size: 23px;
+        margin-top: -40%;
+        margin-bottom:100%;
+        }
+    .h1{
+        font-size: ;
+        color: #e91010;
+    }
+    
+    .navlist a{
+        margin-left: 0;
+        display: block;
+        margin:  10px 0;
+    }
+    .navlist.open{
+        right: 0;
+    }
+   
+    .bottom{
+        font-size: 10px;
+        width: 300px;
+    
+    }
+   
+  }

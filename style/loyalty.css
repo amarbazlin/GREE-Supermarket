@@ -69,6 +69,7 @@ a{
   background-color:#f6ae50 ;
   color: white;  
   text-align: right;
+  width: 100%;
   
 }
 #heading{
@@ -164,6 +165,7 @@ nav ul li a:hover {
     margin: 1%;
     padding-top: 0%;
     padding-bottom: 10px;
+    width: 100%;
 
     margin-top: 2%;
     text-align: justify;
@@ -224,22 +226,31 @@ margin-bottom: 35px;
 font-size: 28px;
 margin-left: 35px;
 }
+.navlist{
+  width: 100%;
+}
+@media (max-width:430px){
 
-@media (max-width:1350px){
-    
   .navlist{
       position: sticky;
       top: 100%;
-      right: 100%;
-      width: 100%;
-      height: 40px;
+      align-items: center;
+      
+      
+  
+      height: auto;
       background: #f6ae50 ;
       display: flex;
-      align-items: center;
+      
+      text-align: center;
       flex-direction:column;
-      padding: 30px 10px;
-      transition: all .55s ease;
+      padding: 0px 10px;
+      
   }
+  .container h1{
+    font-size: 20px;
+  }
+  
   .navlist a{
       margin-left: 0;
       display: block;
@@ -248,4 +259,37 @@ margin-left: 35px;
   .navlist.open{
       right: 0;
   }
+ 
+  .bottom{
+      font-size: 10px;
+      
+  
+  }
+ 
+ .container{
+  margin-top: 1%;
+  width: 250px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.schemes p{
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 325px;
+}
+.schemes h3{
+  margin-left: -18%;
+}
+.foot h3{
+  font-size: 10px;
+}
+.foot a{
+  font-size: 10px;
+}
+.icons{
+  font-size: 10px;
+}
+.payment h5{
+  font-size: 9px;
+}
 }
