@@ -248,12 +248,105 @@ body, html {
     border: solid #ffffff;
 
 }
+.dilivery{
+   
+   margin-left: 1%;
+   height: auto;
+   margin-top: 14px;
+   float: left;
+   margin-bottom: 9px;
+   width: 49%;
+}
+.loyal{
+    margin-right: 1%;
+   
+   float: right;
+   height: auto;
+   margin-top: 6px;
+   margin-bottom: 9px;
+   width: 49%;
+}
+
 
 
 
 .category p {
     margin-bottom: 20px;
 }
+.imagemain{
+    width: 100%;
+}
+.linkers{
+    display: flex;
+}
+.bottom{
+    background-color: #565656;
+    font-size: 20px;
+    border-radius: 10px;
+    margin: 1%;
+    padding-top: 0%;
+    padding-bottom: 10px;
+    width: 100%;
+
+    margin-top: 64%;
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.bottom h4{
+    color: #ffffff;
+}
+
+
+.foot{
+color: #ffffff;
+font-size: 15px;
+
+}
+.foot a:hover{
+color: hsl(24, 100%, 50%);
+}
+
+.apps {
+display: grid;
+
+}
+.applications{
+display: grid;
+margin-right: 100px;
+}
+.play{
+margin-top: 20px;
+color: rgb(51, 104, 126);
+margin-bottom: 20px;
+font-size: 28px;
+margin-right: 20px;
+
+}
+.app{
+color: rgb(0, 119, 255);
+font-size: 28px;
+margin-right: 20px;
+}
+.follows{
+color: white;
+}
+.payment{
+color:white;
+}
+.application{
+color: #ffffff;
+}
+.visa{
+font-size: 28px;
+margin-left: 35px;
+margin-bottom: 35px;
+}
+.master{
+font-size: 28px;
+margin-left: 35px;
+}
+
 
 
 
@@ -276,7 +369,7 @@ body, html {
         
     }
     section{
-        .products{
+    .products{
             padding: 0 12%;
             transition: .2s;
 
@@ -310,6 +403,9 @@ body, html {
         width: 120px;
         height: 80px;
     }
+    .intro{
+        width: 100%;
+    }
     .intro p{
         font-size: 19px;
     }
@@ -325,7 +421,7 @@ body, html {
         margin: 0 0 30px;
     }
     .offers{
-        width: 70%;
+        width: 100%;
         margin-bottom: -40%;
         
     }
@@ -356,13 +452,16 @@ body, html {
         margin-right: 45%;
         font-size: 20px;
     }
-    .imagemain{
-        width: 335px;
-        height: 200px;
-    }
+    
     .h1{
         font-size: ;
         color: #e91010;
+    }
+    .loyal{
+        margin-top: 200px;
+    }
+    .dilivery{
+        margin-top: 200px;
     }
     
     .navlist a{
@@ -376,7 +475,8 @@ body, html {
    
     .bottom{
         font-size: 10px;
-        width: 300px;
+        margin-top: 74%;
+        
     
     }
   
@@ -388,75 +488,4 @@ body, html {
 
 
 
-    .linkers{
-        display: flex;
-    }
-    .bottom{
-        
-        background-color: #565656;
-        font-size: 20px;
-        border-radius: 10px;
-        margin: 1%;
-        padding-top: 0%;
-        padding-bottom: 10px;
-        width: 100%;
-        margin-top: 45%;
-        text-align: justify;
-        padding-left: 10px;
-        padding-right: 10px;
-        
-    }
-    .bottom h4{
-        color: #ffffff;
-    }
-    
-
-.foot{
-    color: #ffffff;
-    font-size: 15px;
-    
-}
-.foot a:hover{
-    color: hsl(24, 100%, 50%);
-}
-  
-.apps {
-    display: grid;
-    
-}
-.applications{
-    display: grid;
-    margin-right: 100px;
-}
-.play{
-    margin-top: 20px;
-    color: rgb(51, 104, 126);
-    margin-bottom: 20px;
-    font-size: 28px;
-    margin-right: 20px;
-
-}
-.app{
-    color: rgb(0, 119, 255);
-    font-size: 28px;
-    margin-right: 20px;
-}
-.follows{
-    color: white;
-}
-.payment{
-    color:white;
-}
-.application{
-    color: #ffffff;
-}
-.visa{
-    font-size: 28px;
-    margin-left: 35px;
-    margin-bottom: 35px;
-}
-.master{
-    font-size: 28px;
-    margin-left: 35px;
-}
-
+   
