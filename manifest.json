@@ -11,6 +11,11 @@
         "src": "groceries.jpeg",
         "sizes": "612x501",
         "type": "image/jpeg"
+      },
+      {
+        "src": "groceries.jpeg",
+        "sizes": "612x501",
+        "type": "image/jpeg"
       }
       
     ]
