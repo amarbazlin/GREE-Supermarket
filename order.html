@@ -26,6 +26,8 @@
         <h1 id="heading"><a href="index.html">Grocies Supermarket</a></h1>
     </div>
      <!--Navigation bar displays withing a list-->
+
+
     <nav>
         <ul class="navlist">
             <li><a href="index.html">Home</a></li>
@@ -40,58 +42,383 @@
     </nav>
 </header>
 <main>
-  <!--Form for placing an order-->
-    <div class="container">
-        <h1>Order Your Products here</h1>
-        
-        <form action="submit_registration.php" method="post">
-          <center><h2>Your Information</h2></center>
-          <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-          </div>
-          <div class="form-group">
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" required>
-          </div>
-          <div class="form-group">
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" required> 
-          </div>
-          <div class="form-group">
-            <label for="phone">Loyalty Card Number (Optional):</label>
-            <input type="tel" id="phone" name="phone">
-          </div>
-          <center><h2>Shipping Details</h2></center>
-          <div class="form-group">
-            <label for="phone">Shipping Address:</label>
-            <input type="tel" id="phone" name="phone">
-          </div>
-        
-          <div class="form-group">
-            <label for="">Shipping Options:</label>
-            <select name="shipping" id="shipping">
-                <option value="">Choose (Optional)</option>
-              <option value="">Normal Shipping (Ships in 7 days)</option>
-              <option value="">Fast Shipping (Ships within 4-5 days)</option>
-              <option value="">Express Shipping (Ships within 1-3 days)</option>
-            
-            </select>
-            <h2><center>Payment method </center></h2>
-            <div class="form-group">
-                <label for="">Select the Payement Method:</label>
-                <select name="payment" id="payment" required>
-                  <option value="">Choose a method</option>
-                  <option value="">Credit Card</option>
-                  <option value="">Debit Card</option>
-                  <option value="">Cash On Delivery </option>
-                
-                </select>
+  <section>
+    <center><h2 class="cat">Categories</h2></center>
+      <h2 class="cathead">Dairy Products</h2>
+      <div class="category">
+          
+          <div class="product" id="product">
+            <h4>Happy Cow Cheese 250g</h4>
+            <img src="images/happy cow .jpeg" class="product-image" alt="product">
+            <h4>Rs.350</h4>
+          
 
+
+           <label for="quantity">Quantity</label>
+           <input min="0" value="0" class="input" id="quantity"  type="number"><br><br>
+           <button class="btn" onclick="updateOrder(index)">Add Item </button>
+           
+            
           </div>
-          <button type="submit">Place Order</button>
-        </form>
+          <div class="product">
+            <h4>Milk 550ml</h4>
+            <img src="images/anchor-full-cream-uht-milk-header.png" alt="">
+            <h4>Rs.550</h4>
+
+            
+           <label for="quantity">Quantity</label>
+           <input min="0" value="0" class="input" id="quantity"  type="number">
+
+           <br><br>
+           <button class="btn" onclick="updateOrder(index)">Add Item </button>
+           
+          </div>
+          <div class="product">
+            <h4>Yogurt 500g</h4>
+            <img src="images/protein-plus-coconut-950-teaser.png" alt="">
+            <h4>Rs.450</h4>
+            
+           <label for="quantity">Quantity</label>
+           <input min="0"  class="input" id="quantity" value="0" type="number"><br><br>
+           <button class="btn" onclick="updateOrder(index)">Add Item </button>
+           
+          </div>
+          <div class="product">
+            <h4>ICE-Cream 1l</h4>
+            <img src="images/imorich-hazelnut-chocolate-gelato-featured.png" alt="" >
+            <h4>Rs.650</h4>
+            
+            
+           <label for="quantity">Quantity</label>
+           <input min="0"  class="input" id="quantity" value="0" type="number"><br><br>
+           <button class="btn" onclick="updateOrder(index)">Add Item </button>
+           
+          </div>
+          <div class="product">
+            <h4>Butter 250g</h4>
+            <img src="images/buttter.png" alt="">
+            <h4>Rs.650</h4>
+            
+            <label for="quantity">Quantity</label>
+           <input min="0"  class="input" id="quantity" value="0" type="number"><br><br>
+           <button class="btn" onclick="updateOrder(index)">Add Item </button>
+           
+          </div>
+          <div class="product">
+            <h4>Curd 500ml</h4>
+            <img src="images/light-weight-white-plain-round-eco-friendly-and-disposable-plastic-curd-cup--142.jpg.webp" alt="">
+            <h4>Rs.450</h4>
+            
+           
+           <label for="quantity">Quantity</label>
+           <input min="0"  class="input" id="quantity" value="0" type="number"><br><br>
+           <button class="btn" onclick="updateOrder(index)">Add Item </button>
+          </div>
+          
       </div>
+
+
+
+      <h2 class="cathead">Fruits</h2>
+      <div class="category">  
+        <div class="product">
+          <h4>Grapes 100g</h4>
+          <img src="images/grapes" alt="">
+          <h4>Rs.250</h4>
+          <label for="quantity">Quantity</label>
+           <input min="0"  class="input" id="quantity" value="0" type="number">
+          <br><br>
+          <button class="btn" onclick="updateOrder(index)">Add Item </button>
+          
+        </div>
+        <div class="product">
+          <h4>Papaya </h4>
+          <img src="images/papaya.webp" alt="">
+          <h4>Rs.250</h4>
+          <label for="quantity">Quantity</label>
+           <input min="0"  class="input" id="quantity" value="0" type="number">
+
+         <br><br>
+         <button class="btn" onclick="updateOrder(index)">Add Item </button>
+        </div>  
+        <div class="product">
+          <h4>Apple Kalakulu 100g</h4>
+          <img src="images/apple-kalakulu.jpg" alt="">
+          <h4>Rs.260</h4>
+          
+         <label for="quantity">Quantity</label>
+         <input min="0" class="input" id="quantity" value="0" type="number"><br><br>
+         <button class="btn" onclick="updateOrder(index)">Add Item </button>
+         
+        </div>
+        <div class="product">
+          <h4>Organic Banana 100g</h4>
+          <img src="images/banana1.jpg" alt="" >
+          <h4>Rs.150</h4>
+          
+          
+         <label for="quantity">Quantity</label>
+         <input min="0"  class="input" id="quantity" value="0" type="number"><br><br>
+         <button class="btn" onclick="updateOrder(index)">Add Item </button>
+         
+        </div>
+        <div class="product">
+          <h4>Avocado 100g</h4>
+          <img src="images/Avocados-3d84a3a.jpg" alt="">
+          <h4>Rs.140</h4>
+          
+          <label for="quantity">Quantity</label>
+         <input min="0"  class="input" id="quantity" value="0" type="number"><br><br>
+         <button class="btn" onclick="updateOrder(index)">Add Item </button>
+         
+        </div>
+        <div class="product">
+          <h4>Watermelon 100g</h4>
+          <img src="images/watermelon.png.webp" alt="">
+          <h4>Rs.200</h4> 
+          
+         
+         <label for="quantity">Quantity</label>
+         <input min="0"  class="input" id="quantity" value="0" type="number"><br><br>
+         <button class="btn" onclick="updateOrder(index)">Add Item </button>
+         
+        </div>
+        
+      </div>
+
+
+      <h2 class="cathead">Vegetables</h2>
+      <div class="category">
+        <div class="product">
+          <h4>Pumkin 100g</h4>
+          <img src="images/pumkin.jpeg" alt="">
+          <h4>Rs.250</h4>
+          <label for="quantity">Quantity</label>
+           <input min="0"  class="input" id="quantity" value="0" type="number">
+          <br><br>
+          <button class="btn" onclick="updateOrder(index)">Add Item </button>
+          
+        </div>
+        <div class="product">
+          <h4>Carrot 100g</h4>
+          <img src="images/carrot.webp" alt="">
+          <h4>Rs.100</h4>
+          <label for="quantity">Quantity</label>
+           <input min="0"  class="input" id="quantity" value="0" type="number">
+
+         <br><br>
+         <button class="btn" onclick="updateOrder(index)">Add Item </button>
+         
+        </div>  
+        <div class="product">
+          <h4>Cabbage 100g</h4>
+          <img src="images/cabbage new.jpeg" alt="">
+          <h4>Rs.130</h4>
+          
+         <label for="quantity">Quantity</label>
+         <input min="0" class="input" id="quantity" value="0" type="number"><br><br>
+         <button class="btn" onclick="updateOrder(index)">Add Item </button>
+         
+        </div>
+        <div class="product">
+          <h4>Sweet Potato 100g</h4>
+          <img src="images/sweet potato.jpeg" alt="" >
+          <h4>Rs.150</h4>
+          
+          
+         <label for="quantity">Quantity</label>
+         <input min="0"  class="input" id="quantity" value="0" type="number"><br><br>
+         <button class="btn" onclick="updateOrder(index)">Add Item </button>
+         
+        </div>
+        <div class="product">
+          <h4>Red Onions 100g</h4>
+          <img src="images/redonion.jpg" alt="">
+          <h4>Rs.140</h4>
+          
+          <label for="quantity">Quantity</label>
+         <input min="0"  class="input" id="quantity" value="0" type="number"><br><br>
+         <button class="btn" onclick="updateOrder(index)">Add Item </button>
+         
+        </div>
+        <div class="product">
+          <h4>Brocoil 100g</h4>
+          <img src="images/IMG_26947-removebg-preview.png" alt="">
+          <h4>Rs.150</h4> 
+          
+         
+         <label for="quantity">Quantity</label>
+         <input min="0"  class="input" id="quantity" value="0" type="number"><br><br>
+         <button class="btn" onclick="updateOrder(index)">Add Item </button>
+         
+        </div>
+        
+      </div>
+
+
+      <h2 class="cathead">Meat & Seafood</h2>
+      <div class="category">
+        <div class="product">
+          <h4>Beef 100g</h4>
+          <img src="images/beek.jpeg" alt="">
+          <h4>Rs.250</h4>
+          <label for="quantity">Quantity</label>
+           <input min="0"  class="input" id="quantity" value="0" type="number">
+          <br><br>
+          <button class="btn" onclick="updateOrder(index)">Add Item </button>
+          
+        </div>
+        <div class="product">
+          <h4>Tuna Fish 100g</h4>
+          <img src="images/tuna fish.jpeg" alt="">
+          <h4>Rs.400</h4>
+          <label for="quantity">Quantity</label>
+           <input min="0"  class="input" id="quantity" value="0" type="number">
+
+         <br><br>
+         <button class="btn" onclick="updateOrder(index)">Add Item </button>
+         
+        </div>  
+        <div class="product">
+          <h4>Chicken 100g</h4>
+          <img src="images/chicken .png" alt="">
+          <h4>Rs.130</h4>
+          
+         <label for="quantity">Quantity</label>
+         <input min="0" class="input" id="quantity" value="0" type="number"><br><br>
+         <button class="btn" onclick="updateOrder(index)">Add Item </button>
+         
+        </div>
+        <div class="product">
+          <h4>Crabs 100g</h4>
+          <img src="images/istockphoto-162160500-612x612-removebg-preview.png" alt="">
+          <h4>Rs.550</h4>
+          
+          
+         <label for="quantity">Quantity</label>
+         <input min="0"  class="input" id="quantity" value="0" type="number"><br><br>
+         <button class="btn" onclick="updateOrder(index)">Add Item </button>
+         
+        </div>
+        <div class="product">
+          <h4>Prawns 100g</h4>
+          <img src="images/prawns .webp" alt="">
+          <h4>Rs.190</h4>
+          
+          <label for="quantity">Quantity</label>
+         <input min="0"  class="input" id="quantity" value="0" type="number"><br><br>
+         <button class="btn" onclick="updateOrder(index)">Add Item </button>
+         
+        </div>
+        <div class="product">
+          <h4>Cuttle Fish 100g</h4>
+          <img src="images/cuttlefish.jpeg" alt="">
+          <h4>Rs.150</h4> 
+          
+         
+         <label for="quantity">Quantity</label>
+         <input min="0"  class="input" id="quantity" value="0" type="number"><br><br>
+         <button class="btn" onclick="updateOrder(index)">Add Item </button>
+         
+        </div>
+      
+      </div>
+
+
+      <h2 class="cathead">Baking & Cooking Ingredients</h2>
+      <div class="category">
+        <div class="product">
+          <h4>King Flour 1kg</h4>
+          <img src="images/king flour.png" alt="">
+          <h4>Rs.900</h4>
+          <label for="quantity">Quantity</label>
+           <input min="0"  class="input" id="quantity" value="0" type="number">
+          <br><br>
+         
+          <button class="btn" onclick="updateOrder(index)">Add Item </button>
+          
+        </div>
+        <div class="product">
+          <h4>Bread Flour 600g</h4>
+          <img src="images/bread.jpeg" alt="">
+          <h4>Rs.700</h4>
+          <label for="quantity">Quantity</label>
+           <input min="0"  class="input" id="quantity" value="0" type="number">
+
+         <br><br>
+         <button class="btn" onclick="updateOrder(index)">Add Item </button>
+        </div>  
+        <div class="product">
+          <h4>Cake Flour</h4>
+          <img src="images/cake flour.webp" alt="">
+          <h4>Rs.130</h4>
+          
+         <label for="quantity">Quantity</label>
+         <input min="0" class="input" id="quantity" value="0" type="number"><br><br>
+         <button class="btn" onclick="updateOrder(index)">Add Item </button>
+        </div>
+        <div class="product">
+          <h4>Pizza Flour 700g</h4>
+          <img src="images/pizza flour.webp" alt="">
+          <h4>Rs.550</h4>
+          
+          
+         <label for="quantity">Quantity</label>
+         <input min="0"  class="input" id="quantity" value="0" type="number"><br><br>
+         <button class="btn" onclick="updateOrder(index)">Add Item </button>
+         
+        </div>
+        <div class="product">
+          <h4>Extra Virgin Olive Oil 250ml</h4>
+          <img src="images/extra virgin oil.png" alt="">
+          <h4>Rs.3,000</h4>
+          
+          <label for="quantity">Quantity</label>
+         <input min="0"  class="input" id="quantity" value="0" type="number"><br><br>
+         <button class="btn" onclick="updateOrder(index)">Add Item </button>
+         
+        </div>
+        <div class="product">
+          <h4>Vanilla Essence 50ml</h4>
+          <img src="images/vanilla essence.jpeg" alt="">
+          <h4>Rs.300</h4> 
+          
+         
+         <label for="quantity">Quantity</label>
+         <input min="0"  class="input" id="quantity" value="0" type="number"><br><br>
+         <button class="btn" onclick="updateOrder(index)">Add Item </button>
+         
+         
+        </div>
+      
+      </div>
+      
+      <div class="table_mom">
+        <table class="order_table">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Subtotal (Rs.)</th>
+                </tr>
+            </thead>
+            <tbody id="orders">
+                <!-- All the orders will be displayed here through JS -->
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Total Price</td>
+                    <td id="totalPrice">0</td>
+                </tr>
+            </tfoot>
+        </table>
+        
+        <button id="reset" class="adder">Reset Order</button>
+    </div>
+      
+      
+  </section>
+
 
 </main>
 <footer>
@@ -129,7 +456,8 @@
             </div>
             <hr>
             <div class="application">
-                <h5>Download App</h5>
+               <h5>Download App</h4>
+    
                 <center><div class="apps">
                     <div class="play"><i class="fa-brands fa-google-play"></i></div>
                     <div class="app"><i class="fa-brands fa-app-store-ios"></i></div>
@@ -143,7 +471,8 @@
     
         </div>
     </section>
-   
+  </section>
+  <script src="main.js"></script>
 
 </footer>
 </body>

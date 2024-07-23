@@ -427,6 +427,7 @@ margin-left: 35px;
         font-size: 10px;
         
     
+        
     }
    
    
@@ -442,6 +443,9 @@ margin-left: 35px;
   .payment h5{
     font-size: 9px;
   }
+  .linkers{
+    display: block;
+}
   }
 
 @media (max-width:375px){

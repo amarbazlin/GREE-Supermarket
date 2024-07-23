@@ -434,6 +434,9 @@ text-align: center;
     margin-left: 5px;
     margin-right: 5px;
    }
+   .linkers{
+    display: block;
+}
    .branch{
     margin-bottom: 30px;
     height: auto;

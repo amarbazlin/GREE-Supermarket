@@ -383,6 +383,9 @@ th{
     display: grid;
     
 }
+.linkers{
+    display: block;
+}
 table{
     width: 30px;
     margin-left: -15%;

@@ -265,6 +265,9 @@ margin-left: 35px;
       
   
   }
+  .linkers{
+    display: block;
+}
  
  .container{
   margin-top: 1%;
