@@ -1,138 +1,151 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const products = [
-        { name: 'Happy Cow Cheese 250g', price: 200 },
-        { name: 'Milk 550ml', price: 150 },
-        { name: 'Yogurt 500g', price: 100 },
-        { name: 'ICE-Cream 1l', price: 250 },
-        { name: 'Butter 250g', price: 180 },
-        { name: 'Curd 500ml', price: 120 },
-        { name: "Grapes 100g", price: 250 },
-        { name: "Papaya", price: 250 },
-        { name: "Apple Kalakulu 100g", price: 260 },
-        { name: "Organic Banana 100g", price: 150 },
-        { name: "Avocado 100g", price: 140 },
-        { name: "Watermelon 100g", price: 200 },
-        { name: "Pumkin 100g", price: 250 },
-        { name: "Carrot 100g", price: 100 },
-        { name: "Cabbage 100g", price: 130 },
-        { name: "Sweet Potato 100g", price: 150 },
-        { name: "Red Onions 100g", price: 140 },
-        { name: "Brocoil 100g", price: 150 },
-        { name: "Beef 100g", price: 250 },
-        { name: "Tuna Fish 100g", price: 400 },
-        { name: "Chicken 100g", price: 130 },
-        { name: "Crabs 100g", price: 550 },
-        { name: "Prawns 100g", price: 190 },
-        { name: "Cuttle Fish 100g", price: 150 },
-        { name: "King Flour 1kg", price: 900 },
-        { name: "Bread Flour 600g", price: 700 },
-        { name: "Cake Flour", price: 130 },
-        { name: "Pizza Flour 700g", price: 550 },
-        { name: "Extra Virgin Olive Oil 250ml", price: 3000 },
-        { name: "Vanilla Essence 50ml", price: 300 }
-      
-    ];
+// Wait until the DOM is fully loaded before executing the script
+document.addEventListener('DOMContentLoaded', () => {
 
-    function updateOrder(index) {
-        const quantityInput = document.getElementsByClassName('input')[index];
-        const quantity = parseInt(quantityInput.value);
-        let productName = products[index].name;
-        let subtotal = quantity * products[index].price;
-
-        if (quantity > 0) {
-            const ordersTable = document.getElementById('orders');
-            const newRow = ordersTable.insertRow();
-            const msg = [productName, quantity, subtotal];
-
-            msg.forEach(text => {
-                const newCell = newRow.insertCell();
-                newCell.innerHTML = text;
-            });
-
-            updateTotalPrice(subtotal);
-        }
-    }
-
-    function updateTotalPrice(subtotal) {
-        let totalPrice = document.getElementById('totalPrice');
-        let currentTotal = parseInt(totalPrice.innerText);
-        totalPrice.innerText = currentTotal + subtotal;
-    }
-    const buttons = document.getElementsByClassName('btn');
-    Array.from(buttons).forEach((button, index) => {
-        button.addEventListener('click', function() {
-            updateOrder(index);
+    // Select all buttons with the class 'btn' and add a click event listener to each
+    const addButtons = document.querySelectorAll('.btn');
+    addButtons.forEach(button => {
+        button.addEventListener('click', (event) => {
+            // Get the product ID from the data attribute of the button that was clicked
+            const productId = event.target.getAttribute('data-product-id');
+            addItemToOrder(productId); // Call the function to add the item to the order
         });
     });
 
-    document.getElementById('reset').addEventListener('click', function() {
-        document.getElementById('orders').innerHTML = '';
-        document.getElementById('totalPrice').innerText = '0';
-    });
+    // Add event listeners for saving, loading, and clearing favorites
+    document.getElementById('saveToFavorites').addEventListener('click', saveToFavorites);
+    document.getElementById('loadFavorites').addEventListener('click', loadFavorites);
+    document.getElementById('clearFavorites').addEventListener('click', clearFavorites);
 });
 
+// Function to add an item to the order table
+function addItemToOrder(productId) {
+    // Get the product element using the product ID
+    const productElement = document.getElementById(productId);
+    // Extract the product name, price, image source, and quantity
+    const name = productElement.querySelector('.product-name').innerText;
+    const priceText = productElement.querySelector('.product-price').innerText;
+    const imageSrc = productElement.querySelector('.product-image').src;
+    const quantityInput = productElement.querySelector('.input');
+    const quantity = parseInt(quantityInput.value); // Convert quantity to an integer
 
+    // Check if quantity is greater than 0 before adding to the order
+    if (quantity > 0) {
+        // Extract the price and calculate the subtotal
+        const price = parseInt(priceText.replace('Rs.', ''));
+        const subtotal = quantity * price;
 
+        // Get the order table body to append the new row
+        const orderTableBody = document.getElementById('orders').querySelector('tbody');
+        const newRow = document.createElement('tr'); // Create a new row
 
+        // Populate the new row with product details
+        newRow.innerHTML = `
+            <td><img src="${imageSrc}" alt="${name}" style="width: 50px; height: 50px; margin-right:300px;">${name}</td>
+            <td>${quantity}</td>
+            <td>${subtotal}</td>
+            <td><button class="remove-item"><i class="fas fa-trash"></i></button></td>
+        `;
 
+        // Add a click event listener to the remove button in the new row
+        newRow.querySelector('.remove-item').addEventListener('click', () => {
+            newRow.remove(); // Remove the row from the table
+            updateTotal(); // Update the total price
+        });
 
+        // Append the new row to the order table
+        orderTableBody.appendChild(newRow);
+        updateTotal(); // Update the total price
+    }
+}
 
+// Function to update the total price displayed
+function updateTotal() {
+    const totalPriceElement = document.getElementById('totalPrice');
+    const rows = document.getElementById('orders').querySelector('tbody').querySelectorAll('tr');
+    let total = 0;
 
-/*let quantityInputs = document.querySelectorAll('.input');
-let ordersTable = document.getElementById('orders');
-let totalPrice = document.getElementById('totalPrice');
+    // Loop through each row to calculate the total price
+    rows.forEach(row => {
+        const cells = row.getElementsByTagName('td');
+        const subtotal = parseInt(cells[2].innerText);
+        total += subtotal; // Add the subtotal to the total
+    });
 
-               quantityInputs.forEach(function(input, index) {
-                input.addEventListener('input', function() {
-                    updateOrder(index, parseInt(input.value));
-                });
+    // Display the total price
+    totalPriceElement.innerText = total;
+}
+
+// Function to reset the order table and total price
+function resetOrder() {
+    document.getElementById('orders').querySelector('tbody').innerHTML = ''; // Clear the table
+    document.getElementById('totalPrice').innerText = '0'; // Reset the total price
+}
+
+// Function to save the current order to local storage as favorites
+document.getElementById('saveToFavorites').addEventListener('click', function() {
+    const orderTableBody = document.getElementById('orders').querySelector('tbody');
+    const rows = orderTableBody.querySelectorAll('tr');
+    let favorites = [];
+
+    // Loop through each row and store the item details in the favorites array
+    rows.forEach(row => {
+        const cells = row.getElementsByTagName('td');
+        const imageSrc = cells[0].querySelector('img').src;
+        const name = cells[0].textContent.trim();
+        const quantity = parseInt(cells[1].innerText);
+        const subtotal = parseInt(cells[2].innerText);
+
+        // Push the item details into the favorites array
+        favorites.push({ imageSrc, name, quantity, subtotal });
+    });
+
+    // Save the favorites array to local storage
+    localStorage.setItem('favorites', JSON.stringify(favorites));
+});
+
+// Function to load the favorites from local storage and display them in the order table
+document.getElementById('loadFavorites').addEventListener('click', function() {
+    const favorites = JSON.parse(localStorage.getItem('favorites'));
+    const orderTableBody = document.getElementById('orders').querySelector('tbody');
+    orderTableBody.innerHTML = ''; // Clear current table
+
+    // Check if there are any favorites saved
+    if (favorites && favorites.length > 0) {
+        // Loop through each favorite item and create a new row in the order table
+        favorites.forEach(item => {
+            const newRow = document.createElement('tr');
+            newRow.innerHTML = `
+                <td><img src="${item.imageSrc}" alt="${item.name}" style="width: 50px; height: 50px; margin-right:350px;">${item.name}</td>
+                <td>${item.quantity}</td>
+                <td>${item.subtotal}</td>
+                <td><button class="remove-item"><i class="fas fa-trash"></i></button></td>
+            `;
+
+            // Add event listener for the remove button to delete the row
+            newRow.querySelector('.remove-item').addEventListener('click', () => {
+                newRow.remove(); // Remove the row from the table
+                updateTotal(); // Update the total price
             });
 
-            function updateOrder(index, quantity) {
-                let productName = products[index].name;
-                let subtotal = quantity * products[index].price;
-            
+            // Append the new row to the order table
+            orderTableBody.appendChild(newRow);
+        });
 
-                
-                let existingRow = ordersTable.querySelector(`tr[data-index="${index}"]`);
-                
-                if (quantity > 0) {
-                    if (existingRow) {
-                        existingRow.querySelector('.quantity').textContent = quantity;
-                        existingRow.querySelector('.subtotal').textContent = subtotal;
-                    } else {
-                        var row = document.createElement('tr');
-                        row.setAttribute('data-index', index);
-                        row.innerHTML = `
-                            <td>${productName}</td>
-                            <td class="quantity">${quantity}</td>
-                            <td class="subtotal">${subtotal}</td>
-                        `;
-                        ordersTable.appendChild(row);
-                    }
-                } 
+        updateTotal(); // Update the total price
+    } else {
+        // If no favorites are found, alert the user
+        alert("No favorites found!");
+    }
+});
 
-                
-                let total = calculateTotal();
-                totalPrice.textContent = total;
-            }
-
-            function calculateTotal() {
-                let total = 0;
-                ordersTable.querySelectorAll('tr').forEach(function(row) {
-                    let subtotal = parseInt(row.querySelector('.subtotal').textContent);
-                    total += subtotal;
-                });
-                return total;
-            }
-
-            
-            let resetButton = document.getElementById('reset');
-            resetButton.addEventListener('click', function() {
-                quantityInputs.forEach(function(input) {
-                    input.value = 0;
-                });
-                ordersTable.innerHTML = '';
-                totalPrice.textContent = 0;
-            });
-        });*/
+// Function to clear the favorites from local storage and the order table
+document.getElementById('clearFavorites').addEventListener('click', function() {
+    localStorage.removeItem('favorites'); // Remove the favorites from local storage
+    
+    // Clear the displayed items in the order table
+    const orderTableBody = document.getElementById('orders').querySelector('tbody');
+    orderTableBody.innerHTML = ''; // Clear current table
+    
+    // Reset the total price
+    document.getElementById('totalPrice').innerText = '0';
+});
