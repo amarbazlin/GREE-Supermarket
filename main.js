@@ -81,6 +81,35 @@ function resetOrder() {
     document.getElementById('totalPrice').innerText = '0'; // Reset the total price
 }
 
+
+
+document.getElementById('buyNowButton').addEventListener('click', () => {
+    // Get all the rows in the order table
+    const rows = document.getElementById('orders').querySelector('tbody').querySelectorAll('tr');
+    let products = [];
+
+    // Loop through each row and store the product details
+    rows.forEach(row => {
+        const cells = row.getElementsByTagName('td');
+        const imageSrc = cells[0].querySelector('img').src;
+        const name = cells[0].textContent.trim();
+        const quantity = parseInt(cells[1].innerText);
+        const subtotal = parseInt(cells[2].innerText);
+
+        // Push the item details into the products array
+        products.push({ imageSrc, name, quantity, subtotal });
+    });
+
+    // Save the products array to localStorage
+    localStorage.setItem('productInfo', JSON.stringify(products));
+
+    // Redirect to the checkout page
+    window.location.href = 'checkout.html';
+});
+
+
+
+
 // Function to save the current order to local storage as favorites
 document.getElementById('saveToFavorites').addEventListener('click', function() {
     const orderTableBody = document.getElementById('orders').querySelector('tbody');
@@ -110,7 +139,7 @@ document.getElementById('loadFavorites').addEventListener('click', function() {
     orderTableBody.innerHTML = ''; // Clear current table
 
     // Check if there are any favorites saved
-    if (favorites && favorites.length > 0) {
+    if (favorites.length > 0) {
         // Loop through each favorite item and create a new row in the order table
         favorites.forEach(item => {
             const newRow = document.createElement('tr');
@@ -132,9 +161,6 @@ document.getElementById('loadFavorites').addEventListener('click', function() {
         });
 
         updateTotal(); // Update the total price
-    } else {
-        // If no favorites are found, alert the user
-        alert("No favorites found!");
     }
 });
 

@@ -1,5 +1,5 @@
  h1 {
-    background-color: #f6ae50; 
+    background-color: #f51010; 
     color: rgb(238, 14, 14); 
     padding: 1%; 
     text-align: center; 
@@ -16,14 +16,14 @@ h1 :hover{
 
 .header-container {
    
-    color: white;  
+    color: rgb(255, 255, 255);  
     text-align: right;
     width: 100%;
     
 }
 a{
     text-decoration: none;
-    color: rgb(3, 0, 0);
+    color: rgb(255, 255, 255);
 }
 #heading{
     margin-top: -2px;
@@ -115,7 +115,7 @@ body, html {
   }
   .container h1{
     background-color: #0056b3;
-    color: #f6ae50;
+    color: #f51010;
     border-radius: 20px;
   }
   .container h2{
@@ -162,21 +162,21 @@ body, html {
 nav ul {
     list-style: none;
     padding: 0;
-    background-color: #f6ae50; 
+    background-color: #f51010; 
 }
 .navlist{
     width: 100%;
 }
 nav ul li {
     display: inline;
-    margin: 0px 50px;
+    margin: 0% 4.2%;
     font-size: 18px;
 
 }
 
 nav ul li a {
     text-decoration: none;
-    color: hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
     font-weight: bold;
 }
 nav ul li a:hover {
@@ -197,7 +197,7 @@ nav ul li a:hover {
     margin: 1%;
     padding-top: 0%;
     padding-bottom: 10px;
-    width: 100%;
+    width: 97%;
 
     margin-top:3%;
     text-align: justify;
@@ -323,7 +323,7 @@ margin-left: 35px;
         align-items: center;
         
         height: auto;
-        background: #f6ae50 ;
+        background: #f51010 ;
         display: flex;
         
         text-align: center;
@@ -467,12 +467,52 @@ margin-left: 35px;
     }
 
     thead {
-        background-color: #f6ae50;
+        background-color: #f51010;
         color: white;
     }
     td{
         margin-bottom: 10px;
-        border-bottom: 4px solid #f6ae50;
+        border-bottom: 4px solid #f51010;
         padding: 20px;
+    }
+    .reset{
+        background-color: #fc1f1f;
+        width: 100px;
+        color: white;
+        padding: 10px 1px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-left:3%;
+    }
+    .butn{
+        background-color: #0b7a1d;
+        width: 100px;
+        color: white;
+        margin-left: 30px;
+        padding: 10px 1px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }.butn:hover{
+        background-color: #085414;
+    }
+
+    .saveBtn{
+        background-color: #0b7a1d;
+        width: 160px;
+        color: white;
+        margin-left: 30px;
+        padding: 10px ;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+
+    }
+    .saveBtn:hover{
+        background-color: #085414;
+    }
+    .reset:hover{
+        background-color: #900808;
     }
   

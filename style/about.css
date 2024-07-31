@@ -1,12 +1,13 @@
 h1 {
-    background-color:#f6ae50; 
-    color: rgb(238, 14, 14); 
+    background-color:#f51010; 
+    color: rgb(255, 255, 255); 
     padding: 2px; 
     text-align: center; 
     text-decoration: none;
     
 
 }
+
 h1 :hover{
     cursor: pointer;
     color: hsl(24, 100%, 50%);
@@ -15,12 +16,12 @@ h1 :hover{
 nav ul {
     list-style: none;
     padding: 0;
-    background-color: #f6ae50; 
+    background-color: #f51010; 
 }
 
 nav ul li {
     display: inline;
-    margin: 0px 50px;
+    margin: 0% 4.2%;
     font-size: 18px;
 
 }
@@ -29,7 +30,7 @@ nav ul li {
 }
 nav ul li a {
     text-decoration: none;
-    color: hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
     font-weight: bold;
 }
 nav ul li a:hover {
@@ -45,7 +46,7 @@ nav ul li a:hover {
 }
 a{
     text-decoration: none;
-    color: rgb(3, 0, 0);
+    color: rgb(255, 255, 255);
 }
 #heading{
     margin-top: -2px;

@@ -1,6 +1,5 @@
 h1 {
-  background-color: #f6ae50; 
-  color: rgb(238, 14, 14); 
+  background-color: #f51010; 
   padding: 2px; 
   text-align: center; 
   text-decoration: none;
@@ -63,10 +62,10 @@ margin-bottom: 15px;
 
 a{
   text-decoration: none;
-  color: rgb(3, 0, 0);
+  color: rgb(255, 255, 255);
 }
 .header-container {
-  background-color:#f6ae50 ;
+  background-color:#f51010 ;
   color: white;  
   text-align: right;
   width: 100%;
@@ -109,13 +108,13 @@ body, html {
 nav ul {
     list-style: none;
     padding: 0;
-    background-color: #f6ae50; 
+    background-color: #f51010; 
     width: 100%;
 }
 
 nav ul li {
     display: inline;
-    margin: 0px 50px;
+    margin: 0% 4.2%;
     font-size: 18px;
 
 
@@ -123,7 +122,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
     font-weight: bold;
 }
 nav ul li a:hover {
@@ -165,7 +164,7 @@ nav ul li a:hover {
     margin: 1%;
     padding-top: 0%;
     padding-bottom: 10px;
-    width: 100%;
+    width: 97%;
 
     margin-top: 2%;
     text-align: justify;
