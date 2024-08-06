@@ -329,7 +329,7 @@ margin-left: 35px;
         text-align: center;
         flex-direction:column;
         padding: 0px 10px;
-        width: 150%;
+        width: 90%;
         
     }
     .container h1{
@@ -338,11 +338,17 @@ margin-left: 35px;
     .container h2{
         font-size: 19px
     }
-    .h1{
-        font-size: ;
-        color: #e91010;
+    .cat{
+        font-size: 3px;
+        
     }
-    
+    .category{
+        display: grid;
+    }
+    .product{
+        width: 150px;
+        height: 200px;
+    }
     .navlist a{
         margin-left: 0;
         display: block;
@@ -375,7 +381,7 @@ margin-left: 35px;
    
     color: white;  
     text-align: right;
-    width: 160%;
+    width: 90%;
     
 }
     
