@@ -391,14 +391,18 @@ margin-left: 35px;
     border-color: #000000;
     color: #e91010;
     font-size: 250%;
-    background-color: #ffffff ;
+    background-color: #000000 ;
     border-radius: 10px;
-    margin-left: 35%;
-    margin-right: 35%;
-    padding-bottom: 0.5%;
+    margin-left: 5%;
+    margin-right: 75%;
+    padding-left: 30px;
+    padding-right: 3px;
     margin-top: 2%;
     margin-bottom: 2%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    font-weight: bolder;
+    
 }
 .cathead{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
