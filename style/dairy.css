@@ -115,6 +115,11 @@ body, html {
 .bottom h4{
     color: #ffffff;
 }
+.product img{
+    width: 240px;
+    height: 200px;
+    
+}
 
 
 .foot{
@@ -284,6 +289,7 @@ margin-left: 35px;
     margin: 15px 20px; 
     text-align: center;
     cursor: pointer;
+    place-content: center;
     
     
 }

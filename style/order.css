@@ -335,11 +335,10 @@ margin-left: 35px;
     .container h1{
         font-size: 20px
     }
-    .container h2{
-        font-size: 19px
-    }
+    
     .cat{
         font-size: 3px;
+        background-color: #ffffff ;
         
     }
     .category{
@@ -381,7 +380,7 @@ margin-left: 35px;
    
     color: white;  
     text-align: right;
-    width: 90%;
+    width: 95%;
     
 }
     
@@ -389,9 +388,10 @@ margin-left: 35px;
 
 }
 .cat{
+    border-color: #000000;
     color: #e91010;
     font-size: 250%;
-    background-color: #f8cc93 ;
+    background-color: #ffffff ;
     border-radius: 10px;
     margin-left: 35%;
     margin-right: 35%;

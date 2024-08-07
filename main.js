@@ -164,14 +164,3 @@ document.getElementById('loadFavorites').addEventListener('click', function() {
     }
 });
 
-// Function to clear the favorites from local storage and the order table
-document.getElementById('clearFavorites').addEventListener('click', function() {
-    localStorage.removeItem('favorites'); // Remove the favorites from local storage
-    
-    // Clear the displayed items in the order table
-    const orderTableBody = document.getElementById('orders').querySelector('tbody');
-    orderTableBody.innerHTML = ''; // Clear current table
-    
-    // Reset the total price
-    document.getElementById('totalPrice').innerText = '0';
-});
