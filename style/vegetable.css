@@ -250,6 +250,7 @@ margin-left: 35px;
     margin-top: 5%;
     margin-left: 10px;
     margin-right: 4%;
+    
 }
 .product {
     display:grid; 
@@ -261,6 +262,7 @@ margin-left: 35px;
     margin: 15px 20px; 
     text-align: center;
     cursor: pointer;
+    place-content: center;
     
     
 }
@@ -268,8 +270,9 @@ margin-left: 35px;
 .product img {
 
     margin-bottom: 2px;
-    width: 200px;
-    height: auto;
+    width: 240px;
+    height: 200px;
+    place-content: center;
    
     
     
@@ -298,6 +301,8 @@ margin-left: 35px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
+    margin-left: 60px;
+    place-content: center ;
 }
 .main-image{
   
