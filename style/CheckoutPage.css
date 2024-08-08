@@ -34,7 +34,9 @@ a{
     font-variant: small-caps;
     font-size: 280%;
 }
-
+.copyright-icons{
+    text-align: center;
+}
 .form-group {
     margin-bottom: 4%;
   }

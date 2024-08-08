@@ -19,6 +19,7 @@ nav ul {
     background-color: #f51010; 
 }
 
+
 nav ul li {
     display: inline;
     margin: 0% 4.2%;
@@ -60,6 +61,9 @@ a{
 body, html {
     margin: 0;
     padding: 0;
+}
+.copyright-icons{
+  text-align: center;
 }
 .icons{
     display: flex;
@@ -393,7 +397,7 @@ text-align: center;
       
      
       height: auto;
-      background: #f6ae50 ;
+      background: #f51010  ;
       display: flex;
       
       text-align: center;

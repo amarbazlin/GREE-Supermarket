@@ -157,7 +157,9 @@ body, html {
     border: solid #ffffff;
 
 }
-
+.copyright-icons{
+    text-align: center;
+}
 
 nav ul {
     list-style: none;

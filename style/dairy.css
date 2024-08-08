@@ -120,7 +120,10 @@ body, html {
     height: 200px;
     
 }
-
+.product button{
+    place-content: center;
+    text-align: center;
+}
 
 .foot{
 color: #ffffff;
@@ -190,6 +193,9 @@ margin-left: 35px;
     border-radius: 10px;
   
  
+}
+.copyright-icons{
+    text-align: center;
 }
 .about p{
     font-size: 22px;
@@ -341,7 +347,7 @@ margin-left: 35px;
         
        
         height: auto;
-        background: #f6ae50 ;
+        background: #f51010 ;
         display: flex;
         
         text-align: center;

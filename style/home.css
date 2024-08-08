@@ -13,6 +13,9 @@ h1 {
 .navlist{
     width: 100%;
 }
+.copyright-icons{
+    text-align: center;
+}
 
 
 
@@ -204,6 +207,9 @@ body, html {
     padding-right: 0.2%;
     
 }
+.offers h2{
+    text-align: center;
+}
 
 
 
@@ -215,6 +221,7 @@ body, html {
     width: fit-content;
     padding: 10px;
     color: white;
+
 }
 
 .products {
@@ -294,6 +301,8 @@ body, html {
 .foot{
 color: #ffffff;
 font-size: 15px;
+text-align: center;
+
 
 }
 .foot a:hover{
