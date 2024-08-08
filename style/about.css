@@ -313,7 +313,7 @@ margin-left: 35px;
 
 
 img{
-  size: 100px;
+  resize: 100px;
   text-align: center;
 }
 
@@ -427,7 +427,7 @@ text-align: center;
     height: 500px
   }
   .h1{
-      font-size: ;
+      
       color: #e91010;
  
    }

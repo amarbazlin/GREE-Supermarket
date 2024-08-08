@@ -203,7 +203,7 @@ body, html {
     padding-bottom: 1%;
     margin-top: 3%;
     text-align: justify;
-    padding-left: -10%;
+    padding-left: 0%;
     padding-right: 0.2%;
     
 }
@@ -370,14 +370,14 @@ margin-left: 35px;
         padding: 0px 10px;
         
     }
-    section{
+    
     .products{
             padding: 0 12%;
             transition: .2s;
 
         }
        
-    }
+    
     img-text-block img{
         width: 100%;
         height: auto;

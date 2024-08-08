@@ -31,14 +31,14 @@ function addItemToOrder(productId) {
     // Check if quantity is greater than 0 before adding to the order
     if (quantity > 0) {
         // Extract the price and calculate the subtotal
-        const price = parseInt(priceText.replace('Rs.', ''));
+        const price = parseInt(priceText.replace('Rs.', ''));//replace the RS. by a space 
         const subtotal = quantity * price;
 
         // Get the order table body to append the new row
         const orderTableBody = document.getElementById('orders').querySelector('tbody');
         const newRow = document.createElement('tr'); // Create a new row
 
-        // Populate the new row with product details
+        // Update the new row with product details
         newRow.innerHTML = `
             <td><img src="${imageSrc}" alt="${name}" style="width: 50px; height: 50px; margin-right:300px;">${name}</td>
             <td>${quantity}</td>
@@ -84,8 +84,13 @@ function resetOrder() {
 
 
 document.getElementById('buyNowButton').addEventListener('click', () => {
-    // Get all the rows in the order table
     const rows = document.getElementById('orders').querySelector('tbody').querySelectorAll('tr');
+    // Check if the order table is empty
+    if (rows.length == 0) {
+        alert("Your cart is empty. Please add items before proceeding to checkout.");
+        return; 
+    }
+    // Get all the rows in the order table
     let products = [];
 
     // Loop through each row and store the product details
@@ -102,9 +107,9 @@ document.getElementById('buyNowButton').addEventListener('click', () => {
 
     // Save the products array to localStorage
     localStorage.setItem('productInfo', JSON.stringify(products));
-
     // Redirect to the checkout page
-    window.location.href = 'checkout.html';
+    window.location.href = 'checkoutPage.html';
+
 });
 
 
@@ -115,6 +120,12 @@ document.getElementById('saveToFavorites').addEventListener('click', function() 
     const orderTableBody = document.getElementById('orders').querySelector('tbody');
     const rows = orderTableBody.querySelectorAll('tr');
     let favorites = [];
+
+    // Check if the order table is empty
+    if (rows.length == 0) {
+        alert("Your cart is empty. Please add items before saving to favorites.");
+        return; 
+    }
 
     // Loop through each row and store the item details in the favorites array
     rows.forEach(row => {
@@ -130,6 +141,7 @@ document.getElementById('saveToFavorites').addEventListener('click', function() 
 
     // Save the favorites array to local storage
     localStorage.setItem('favorites', JSON.stringify(favorites));
+    alert("Your products have been saved to favourites.");
 });
 
 // Function to load the favorites from local storage and display them in the order table
@@ -161,6 +173,9 @@ document.getElementById('loadFavorites').addEventListener('click', function() {
         });
 
         updateTotal(); // Update the total price
+    }
+    else{
+        alert("No favorites found. Please add products to your favorites before loading.");
     }
 });
 
