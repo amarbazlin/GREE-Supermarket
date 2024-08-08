@@ -330,6 +330,10 @@ margin-left: 35px;
  
     
 }
+.main-image img{
+    width: 100%;
+    height: 660px;
+}
 .copyright-icons{
     text-align: center;
 }
